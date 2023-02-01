@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js">
+        
+    </script>
+
+</head>
+<body>
+    <div class="form">
+        <span class="form_title">Sign up</span>
+        <form action="" name="myform">
+            <div class="form_input" name="input_form">
+                <i class="ri-user-line"></i>
+                <input type="text" placeholder="Name" name="username" onchange="Name()" >
+                <span class="bar"></span>
+            </div>
+            <span id="l1" ></span>
+            <div class="form_input">
+                <i class="ri-mail-line"></i>
+                <input type="email" placeholder="Email" name="useremail" onchange="Email()">
+                <span class="bar"></span>
+            </div>
+            <span id="l2"></span>
+            <div class="form_input">
+                <i class="ri-lock-line"></i>
+                <input type="password" placeholder="password" name="userpassword" onchange="password()">
+                <span class="bar"></span>
+            </div>
+            <span id="l3"></span>
+            <div class="form_input">
+                <i class="ri-lock-line"></i>
+                <input type="password" placeholder="Confirm password" name="userpassword2" onchange="confirmpass()">
+                <span class="bar"></span>
+            </div>
+            <span id="l4"></span>
+            <button type="submit" class="form_button" onclick="validateform()">Sign up</button>
+            <span class="form_switch">
+                Already have an account?<a href="#" onclick="window.open('login.html', this.target, 'width=550,height=300,left=400,top=200,resizable');">Login</a>
+            </span>
+        </form>
+    </div>
+</body>
+</html>
